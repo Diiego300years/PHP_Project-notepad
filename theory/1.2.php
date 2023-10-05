@@ -31,6 +31,7 @@
 */
 
 $wiek = 11;
+z
 
 /*
  Typy zmiennych w PHP

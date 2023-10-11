@@ -47,6 +47,10 @@
 //     var_dump($i);
 // }
 
+// for ($k = 0; $k <= 5; $k++){
+//   var_dump($k);
+// }
+
 // var_dump('pętla się zakończyła');
 
 /*
@@ -128,15 +132,15 @@
  W tablicy przechowujemy listę filmów, które w danej chwili możemy zobaczyć:
  */
 
-// $cinemaMovies = [
-//     'Joker',
-//     '1917',
-//     'Jumanji: The Next Level',
-//     'Little Women',
-//     'Rambo',
-//     'Commando',
-//     'Alien'
-// ];
+$cinemaMovies = [
+    'Joker',
+    '1917',
+    'Jumanji: The Next Level',
+    'Little Women',
+    'Rambo',
+    'Commando',
+    'Alien'
+];
 
 /*
  Chcielibyśmy wyświetlić potencjalnemu klientowi listę filmów, którą możemy zobaczyć
@@ -144,9 +148,13 @@
  Na razie pokaże tylko samo jej użycie
  */
 
-// for ($index = 0; $index < count($cinemaMovies); $index++) {
-//     echo $cinemaMovies[$index] . "\n";
-// }
+// najelpiej zamiast wywoływać funkcję w pętli za każdym razem... count($cinemaMovies), to lepiej przypisać sobie do zmiennej. 
+
+$moviesCount = count($cinemaMovies);
+
+for ($index = 0; $index < $moviesCount; $index++) {
+    echo $cinemaMovies[$index] . "\n";
+}
 
 /*
  Wyświetliliśmy właśnie repertuar naszego kina.
@@ -198,3 +206,9 @@
  
  Uff ... za nami już jedna z pętli teraz możemy przejść do kolejnej.
  */
+
+$tekst = 'kana';
+for ($i = 0; $i < 3; ($i++)){
+    $tekst .= 'a';
+}
+echo $tekst;

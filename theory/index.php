@@ -63,3 +63,8 @@ var_dump($age);
 $age = 11;
 var_dump($age);
 var_dump(++$age);
+
+
+// żeby było ładnie 
+echo '<br>';
+echo '<h1>Witaj w nowej sekcji</h1>';

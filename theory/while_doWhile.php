@@ -35,20 +35,20 @@
  klientowi za pomocą pętli WHILE
  */
 
-// $cinemaMovies = [
-//     'Joker',
-//     '1917',
-//     'Jumanji: The Next Level',
-//     'Little Women'
-// ];
+$cinemaMovies = [
+    'Joker',
+    '1917',
+    'Jumanji: The Next Level',
+    'Little Women'
+];
 
-// $index = 0;
-// $moviesCount = count($cinemaMovies);
+$index = 0;
+$moviesCount = count($cinemaMovies);
 
-// while($index < $moviesCount) {
-//     echo $cinemaMovies[$index] . "\n";
-//     $index++;
-// }
+while($index < $moviesCount) {
+    echo $cinemaMovies[$index] . "\n";
+    $index++;
+}
 
 /*
  W pętli WHILE sami musimy zadbać o to aby zainicjalizować zmienne na początku oraz aktualizować je w taki sposób aby pętla miała możliwość zakończenia.

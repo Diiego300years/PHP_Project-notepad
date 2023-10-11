@@ -24,27 +24,27 @@
  W celu przetestowania instrukcji break przyjmijmy założenie że jeśli podczas składania zamówienia przekroczymy kwotę, którą mamy w portfelu nie kontynułujemy dalej procesu składania zamówienia.
  W tym celu posłużymy się pętlą FOREACH
  */
-// $wallet = 1000;
-// $cart = [
-//     ['item' => 'myszka', 'price' => 100],
-//     ['item' => 'papier do drukarki', 'price' => 10],
-//     ['item' => 'klawiatura', 'price' => 200],
-//     ['item' => 'laptop', 'price' => 5000],
-//     ['item' => 'DOOM', 'price' => 159],
-// ];
+$wallet = 1000;
+$cart = [
+    ['item' => 'myszka', 'price' => 100],
+    ['item' => 'papier do drukarki', 'price' => 10],
+    ['item' => 'klawiatura', 'price' => 200],
+    ['item' => 'laptop', 'price' => 5000],
+    ['item' => 'DOOM', 'price' => 159],
+];
 
-// $cartValue = 0;
-// foreach ($cart as $item) {
-//     $cartValue += $item['price'];
-//     echo $item['item'] . "\n";
-//     if ($cartValue > $wallet) {
-//         echo 'Przekroczyłeś kwotę którą dysponujesz';
-//         break;
-//     }
-// }
+$cartValue = 0;
+foreach ($cart as $item) {
+    $cartValue += $item['price'];
+    echo $item['item'] . "\n";
+    if ($cartValue > $wallet) {
+        echo 'Przekroczyłeś kwotę którą dysponujesz';
+        break;
+    }
+}
 
-// echo "\n";
-// echo '=============';
+echo "\n";
+echo '=============';
 
 /*
  Tworzymy zmienną w której będziemy przechowywać wartość naszego koszyka.
@@ -63,25 +63,25 @@
  Kod realizujący poniższa zadanie mógłby wyglądać następująco
  */
 
-// $cart = [
-//     ['item' => 'myszka', 'price' => 100],
-//     ['item' => 'papier do drukarki', 'price' => 10],
-//     ['item' => 'klawiatura', 'price' => 200],
-//     ['item' => 'laptop', 'price' => 5000],
-//     ['item' => 'DOOM', 'price' => 159],
-// ];
+$cart = [
+    ['item' => 'myszka', 'price' => 100],
+    ['item' => 'papier do drukarki', 'price' => 10],
+    ['item' => 'klawiatura', 'price' => 200],
+    ['item' => 'laptop', 'price' => 5000],
+    ['item' => 'DOOM', 'price' => 159],
+];
 
-// $cartValue = 0;
-// foreach ($cart as $item) {
-//     echo "{$item['item']}\n";
-//     if ($item['price'] >= 1000) {
-//         echo "Produkt: {$item['item']} kosztuje za dużo !!! Odłuż go na półkę\n";
-//         continue;
-//     }
-//     $cartValue += $item['price'];
-// }
+$cartValue = 0;
+foreach ($cart as $item) {
+    echo "{$item['item']}\n";
+    if ($item['price'] >= 1000) {
+        echo "Produkt: {$item['item']} kosztuje za dużo !!! Odłuż go na półkę\n";
+        continue;
+    }
+    $cartValue += $item['price'];
+}
 
-// echo "Wartość Twoich zakupów wynosi: $cartValue\n";
+echo "Wartość Twoich zakupów wynosi: $cartValue\n";
 
 /*
  Aby to zrealizować użyliśmy instrukcji: continue.

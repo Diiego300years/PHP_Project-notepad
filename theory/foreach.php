@@ -28,19 +28,19 @@
  Aby to lepiej zobrazować posłużymy się przykładem.
  */
 
-// $cinemaMovies = [
-//     'Joker',
-//     '1917',
-//     'Jumanji: The Next Level',
-//     'Little Women',
-//     'Rambo'
-// ];
+$cinemaMovies = [
+    'Joker',
+    '1917',
+    'Jumanji: The Next Level',
+    'Little Women',
+    'Rambo'
+];
 
-// foreach($cinemaMovies as $movie) {
-//   echo $movie . "\n";
-// }
+foreach($cinemaMovies as $movie) {
+  echo $movie . "\n";
+}
 
-// echo "=======\n";
+echo "=======\n";
 
 /*
  Do pętli przekazujemy naszą tablicę z filmami.

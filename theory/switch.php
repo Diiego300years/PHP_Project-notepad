@@ -2,6 +2,8 @@
 
 // SWITCH
 
+// SWITCH SPRAWDZA ZAWARTOŚĆ CZAISZ ???
+
 // $value = 'lorem ipsum ...';
 // if ($value === 'foo') {
 //     // ...
@@ -55,6 +57,26 @@
 //         break;
 //     default:
 //         echo 'value ma inną wartość niż: foo, bar, zaz - hmm ... ciekawe jaką??';
+//         break;
+// }
+
+// $tab = [
+//     'pik' => 'mik',
+//     1 => 3 
+// ];
+
+// $variable = $tab[1];
+
+// switch ($variable) {
+//     case 'mik':
+//         echo 'GITAURAAA mik jest !';
+//         break;
+//     case 3:
+//         echo 'Jest 3';
+//         break;
+    
+//     default:
+//         echo 'inne';
 //         break;
 // }
 

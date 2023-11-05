@@ -40,6 +40,8 @@ foreach($cinemaMovies as $movie) {
   echo $movie . "\n";
 }
 
+// jeśli tablica byłabby pusta, bez elementów to jest omijane.
+
 echo "=======\n";
 
 /*

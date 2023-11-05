@@ -37,7 +37,7 @@ declare(strict_types=1);
  Sama konstrukcja wygląda następująco
 
 PHP 7.x
-function nazwaFunkcji(argumenty): typWartościZwracanej
+function nazwaFunkcji(typ argumentu: $argumenty): typWartościZwracanej
 {
     ciałoFunkcji
 }

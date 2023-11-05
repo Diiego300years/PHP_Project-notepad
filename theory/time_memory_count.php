@@ -2,11 +2,11 @@
 
 $start_time = microtime(true);
 
-$moviesCount = count($cinemaMovies);
+// $moviesCount = count($cinemaMovies);
 
-for ($index = 0; $index < $moviesCount; $index++) {
-    echo $cinemaMovies[$index] . "\n";
-}
+// for ($index = 0; $index < $moviesCount; $index++) {
+//     echo $cinemaMovies[$index] . "\n";
+// }
 
 
 

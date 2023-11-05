@@ -11,13 +11,7 @@ $test_str = "test";
 
 
 # super global $_GET
-$action = null;
-if(!empty($_GET['action'])) {
-    $action = $_GET['action'];
-}
-
-
-// dump($action);
+$action = $_GET['action'] ?? null;
 
 ?>
 
@@ -50,12 +44,15 @@ if(!empty($_GET['action'])) {
 
         <div>
             <?php
-                if ($action=== 'create') : ?>
+                if ($action === 'create') : ?>
                     <h3> Nowa notatka </h3>
+                    <?php echo htmlentities($action) ?>
+
 
                 <?php else: ?>
                     <h4> Lista notatek</h4>
-                    
+                    <?php echo htmlentities($action ?? '') ?>
+
               <?php endif; ?>
 
         </div>  

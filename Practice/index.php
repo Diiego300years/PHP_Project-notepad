@@ -7,6 +7,9 @@ namespace App;
 require_once("src/Utils/debug.php");
 require_once("src/View.php");
 
+// error_reporting(0);
+// ini_set('display_errors', '0'); nie wyświetla błędów na stronie
+
 const DEAFULT_ACTION = 'list';
 
 # super global $_GET
@@ -18,7 +21,7 @@ $viewParams = [];
 if ($action === 'create') {
     $page = 'create';
     $viewParams['resaultCreate'] = 'udało się!';
-} else if ($action === 'list') {
+} else {
     $page = 'list';
     $viewParams['resaultList'] = 'wyświetlamy notatki';
 }

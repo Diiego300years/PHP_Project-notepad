@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 # Showing errors, all (E_ALL)
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
 
 # This function is dumping data on our website on main.localhost
 function dump($data)

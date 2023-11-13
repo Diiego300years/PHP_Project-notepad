@@ -1,44 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notatnik</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link href="public/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="header">
-        <h1>Moje notatki</h1>
-    </div>
-
-    <div class="container">
-
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="/">Lista notatek</a>
-                </li>
-                <li>
-                    <a href="/?action=create">Nowa notatka</a>
-                </li>
-            </ul>
-
+<body class="body">
+    <div class="wrapper">
+        <div class="header">
+            <h1><i class="far fa-clipboard"></i>Moje notatki</h1>
         </div>
 
-        <?php
-        require_once("templates/pages/$page.php");
-        ?>
-        <div>
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li><a href="/">Strona główna</a></li>
+                    <li><a href="/?action=create">Nowa notatka</a></li>
+                </ul>
+            </div>
 
+            <div class="page">
+                <?php require_once("templates/pages/$page.php"); ?>
+            </div>
         </div>
 
+        <div class="footer">
+            <p id="p1">Notatki - projekt w kursie PHP</p>
+            <p class="button_footer">DO NOT <br>PRESS </p>
+        </div>
     </div>
-
-    <div class="footer">
-        Stopka
-    </div>
-
 </body>
+
+
+
 
 </html>
